@@ -1,0 +1,12 @@
+---
+title: "Räumliche Visualisierung mit R"
+author: "Jan-Philipp Kolb"
+date: "18 November 2017"
+output: md_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R in meinem Arbeitsalltag
