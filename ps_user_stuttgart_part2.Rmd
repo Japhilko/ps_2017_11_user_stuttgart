@@ -3,19 +3,19 @@ title: "Thematische Karten erstellen mit R"
 author: "Jan-Philipp Kolb"
 date: "23 November 2017"
 output: 
-  slidy_presentation: default
   beamer_presentation: 
     colortheme: beaver
     fonttheme: structurebold
     highlight: tango
     theme: CambridgeUS
     fig_caption: false
+  slidy_presentation: default
 ---
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,cache=T,warning=F,message=FALSE)
 par(mai=c(0,0,0,0))
-log_gesis=T
+log_gesis=F
 log_home=!log_gesis
   
 internet=F
@@ -160,10 +160,10 @@ wrld_simpl@data[ind,]
 # Das R-Paket `choroplethrMaps`
 
 ```{r}
-library(ggplot2)
-library(choroplethrMaps)
+library(ggplot2);library(choroplethrMaps)
 data(country.map)
-ggplot(country.map, aes(long, lat, group=group)) + geom_polygon()
+ggplot(country.map, aes(long, lat, group=group)) 
++ geom_polygon()
 ```
 
 # Eine Karte für die USA
@@ -176,7 +176,7 @@ ggplot(state.map,aes(long,lat,group=group))+geom_polygon()
 # Andere Quellen für Shapefiles - Das Paket `raster`
 
 - Für Polygonzüge unterhalb der Staatsgrenzen ist [Global Administrative Boundaries](http://www.gadm.org/) eine gute Quelle.
-- Vor allem weil es auch eine API gibt, die man mit dem Paket `raster` nutzen kann.
+- Vor allem wegen API, die man Paket `raster` nutzen kann.
 
 ```{r,warning=F}
 library(raster)
@@ -316,7 +316,7 @@ vwb7 <- onb[vwb1=="07",]
 plot(vwb7)
 ```
 
-```{r,eval=log_home}
+```{r,eval=log_home,echo=F}
 vwb <- as.character(onb@data$ONB_NUMMER)
 vwb1 <- substr(vwb, 1,1)
 vwb7 <- onb[vwb1=="7",]
@@ -360,7 +360,8 @@ plot(SG,col="chocolate1")
 # PLZ-Bereiche in Berlin
 
 ```{r}
-BE <- PLZ[PLZ@data$PLZORT99%in%c("Berlin-West","Berlin (östl. Stadtbezirke)"),]
+BE <- PLZ[PLZ@data$PLZORT99%in%c("Berlin-West",
+              "Berlin (östl. Stadtbezirke)"),]
 plot(BE,col="chocolate2",border="lightgray")
 ```
 
@@ -438,9 +439,9 @@ state_choropleth(df_pop_state)
 ```{r}
 state_choropleth(df_pop_state,
                  title      = "2012 Population Estimates",
-                 legend     = "Population",
-                 num_colors = 1,
-                 zoom       = c("california", "washington", "oregon"))
+                 legend     = "Population",num_colors = 1,
+                 zoom       = c("california", "washington",
+                                "oregon"))
 ```
 
 # Eine Karte der US Counties
@@ -457,17 +458,20 @@ county_choropleth(df_pop_county)
 data(df_pop_country)
 country_choropleth(df_pop_country,
               title      = "2012 Population Estimates",
-              legend     = "Population",
-              num_colors = 1,
+              legend     = "Population",num_colors = 1,
               zoom       = c("austria","germany",
                              "poland", "switzerland"))
 ```
 
 # Weltbank Daten
 
+- AG.AGR.TRAC.NO - [Agricultural machinery, tractors](https://data.worldbank.org/indicator/AG.AGR.TRAC.NO)
+
 ```{r}
 library(WDI) 
-WDI_dat <- WDI(country="all", indicator=c("AG.AGR.TRAC.NO","TM.TAX.TCOM.BC.ZS"),
+WDI_dat <- WDI(country="all",
+    indicator=c("AG.AGR.TRAC.NO",
+    "TM.TAX.TCOM.BC.ZS"),
     start=1990, end=2000)
 ```
 
@@ -509,7 +513,7 @@ library(xlsx)
 HHsr <- read.xlsx2("data/HHsavingRate.xls",1)
 ```
 
-```{r,echo=F,eval=F}
+```{r,echo=F,eval=T}
 kable(HHsr[1:8,1:6])
 ```
 
@@ -535,6 +539,8 @@ bev_dat <- read.xlsx("xlsx_Bevoelkerung.xlsx",3)
 
 
 ![](figure/ZensusMigbg.PNG)
+
+# Beispiel Zensus Daten
 
 ```{r}
 zen <- read.csv2("data/Zensus_extract.csv")
