@@ -1,5 +1,5 @@
 ---
-title: "Karten erstellen mit R"
+title: "Thematische Karten erstellen mit R"
 author: "Jan-Philipp Kolb"
 date: "23 November 2017"
 output: 
@@ -15,10 +15,10 @@ output:
 ```{r, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,cache=T,warning=F,message=FALSE)
 par(mai=c(0,0,0,0))
-log_gesis=F
+log_gesis=T
 log_home=!log_gesis
   
-internet=F
+internet=T
 noint = !internet
 ```
 

@@ -1,5 +1,5 @@
 ---
-title: "Wer ich bin und warum R "
+title: "Gegenwart und Zukunft von R in der Wissenschaft aus meiner Sicht"
 author: "Jan-Philipp Kolb"
 date: "23 November 2017"
 output: 
@@ -183,7 +183,7 @@ devtools::install_github("Japhilko/gosmd")
 
 https://japhilko.github.io/ps_2017_11_user_stuttgart/
 
-
+![](figure/website_userStuttgart.PNG)
 
 
 <!--

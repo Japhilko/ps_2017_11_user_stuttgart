@@ -1,4 +1,4 @@
-# Wer ich bin und warum R 
+# Gegenwart und Zukunft von R in der Wissenschaft aus meiner Sicht
 Jan-Philipp Kolb  
 23 November 2017  
 
@@ -150,7 +150,7 @@ devtools::install_github("Japhilko/gosmd")
 
 ![](http://revolution-computing.typepad.com/.a/6a010534b1db25970b01b7c8d42886970b-800wi)
 
-## Fazit - Zukunft von R in der Wissenschaft
+## Zwischenfazit - Zukunft von R in der Wissenschaft
 
 - Insgesamt wird mehr quantitativ gearbeitet
 - Bedeutung von SPSS nimmt ab
@@ -159,6 +159,11 @@ devtools::install_github("Japhilko/gosmd")
 - Stata ist nach wie vor wichtig (Pfadabhängigkeit)
 - Der große Vorteil von R ist die Flexibilität und die große Nutzer Comunity
 
+## So gehts weiter
+
+https://japhilko.github.io/ps_2017_11_user_stuttgart/
+
+![](figure/website_userStuttgart.PNG)
 
 
 <!--
