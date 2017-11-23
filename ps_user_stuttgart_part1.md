@@ -1,24 +1,8 @@
----
-title: "Wer ich bin und warum R "
-author: "Jan-Philipp Kolb"
-date: "23 November 2017"
-output: 
-  ioslides_presentation: 
-    highlight: tango
-    keep_md: yes
-  beamer_presentation: 
-    colortheme: beaver
-    fonttheme: structurebold
-    highlight: tango
-    theme: CambridgeUS
-    fig_caption: false
----
+# Wer ich bin und warum R 
+Jan-Philipp Kolb  
+23 November 2017  
 
-```{r setup, include=FALSE}
-# https://stackoverflow.com/questions/38514954/removing-figure-text-in-rmarkdown
-knitr::opts_chunk$set(echo = FALSE,warning=F,message = F)
-library(knitr)
-```
+
 
 ## Biographie
 
@@ -74,15 +58,9 @@ library(knitr)
 - Bisher sind im Gesis Panel in 27 Wellen (aa-bc) ca 77 Studien gelaufen.
 - Die Daten sind als [Scientific Use File](https://dbk.gesis.org/dbksearch/sdesc2.asp?db=d&no=5665) (SUF) oder im [Secure Data Center](https://www.gesis.org/angebot/daten-analysieren/weitere-sekundaerdaten/secure-data-center-sdc/) in Köln verfügbar.
 - Der SUF der Welle ec umfasst 7599 Beobachtungen und 7874 Variablen
-```{r,echo=F,eval=F}
-load("data/GP_tab_spat.RData")
-kable(tab_spat,row.names = F)
-```
 
-```{r,eval=F,echo=F}
-library(xlsx)
-write.xlsx2(tab_spat,file="data/tab_spat.xlsx")
-```
+
+
 
 
 ![](figure/StudienSpatial.PNG)
@@ -142,13 +120,15 @@ write.xlsx2(tab_spat,file="data/tab_spat.xlsx")
 
 - Paket zur Nutzung der Zensus 2011 Daten 
 
-```{r,eval=F,echo=T}
+
+```r
 devtools::install_github("stefmue/georefum")
 ```
 
 - Paket zur Nutzung der Overpass API um Daten von OpenStreetMap herunterzuladen
 
-```{r,eval=F,echo=T}
+
+```r
 devtools::install_github("Japhilko/gosmd")
 ```
 
