@@ -191,11 +191,11 @@ head(LUX1@data)
 ```
 
 
-```{r,eval=noint,echo=F}
+```{r,eval=T,echo=F}
 kable(head(LUX1@data))
 ```
 
-```{r,eval=internet,echo=F}
+```{r,eval=F,echo=F}
 datatable(LUX1@data)
 ```
 
