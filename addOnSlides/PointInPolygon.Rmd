@@ -45,7 +45,7 @@ PLZ <- readOGR ("post_pl.shp","post_pl")
 
 ```{r}
 library("gosmd")
-
+pgi <- get_osm_nodes(object=obj_i,keylist[i,3])
 ```
 
 
