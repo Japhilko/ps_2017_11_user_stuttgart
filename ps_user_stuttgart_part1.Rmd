@@ -170,7 +170,7 @@ devtools::install_github("Japhilko/gosmd")
 
 ![](http://revolution-computing.typepad.com/.a/6a010534b1db25970b01b7c8d42886970b-800wi)
 
-## Fazit - Zukunft von R in der Wissenschaft
+## Zwischenfazit - Zukunft von R in der Wissenschaft
 
 - Insgesamt wird mehr quantitativ gearbeitet
 - Bedeutung von SPSS nimmt ab
@@ -178,6 +178,11 @@ devtools::install_github("Japhilko/gosmd")
 - Im Zuge der Open Science Entwicklung wird die Nutzung von R (bei Leibniz Instituten) immer mehr gefördert
 - Stata ist nach wie vor wichtig (Pfadabhängigkeit)
 - Der große Vorteil von R ist die Flexibilität und die große Nutzer Comunity
+
+## So gehts weiter
+
+https://japhilko.github.io/ps_2017_11_user_stuttgart/
+
 
 
 
