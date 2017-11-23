@@ -1,0 +1,44 @@
+---
+title: "Linking zwischen Koordinaten und Shapefiles"
+author: "Jan-Philipp Kolb"
+date: "23 November 2017"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,cache=T,warning=F,message=FALSE)
+log_gesis=T
+log_home=!log_gesis
+  
+internet=T
+noint = !internet
+```
+
+## PLZ Datensatz einlesen
+
+
+# Das Paket `rgdal`
+
+- Postleitzahlenbereiche - <http://arnulf.us/PLZ>
+
+```{r}
+library(rgdal)
+```
+
+
+```{r,eval=log_gesis,echo=F}
+setwd("D:/Daten/Daten/GeoDaten")
+PLZ <- readOGR ("post_pl.shp","post_pl")
+```
+
+```{r,eval=log_home,echo=F}
+setwd("D:/GESIS/Workshops/GeoDaten/data/")
+PLZ <- readOGR ("post_pl.shp","post_pl")
+```
+
+
+
+```{r,eval=F}
+library(rgdal)
+PLZ <- readOGR ("post_pl.shp","post_pl")
+```

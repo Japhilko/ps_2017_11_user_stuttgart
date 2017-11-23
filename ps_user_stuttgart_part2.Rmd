@@ -1162,6 +1162,13 @@ Vielen Dank für die Aufmerksamkeit
 
 http://rpubs.com/Japhilko82/Rleaflet
 
+
+- Die Nutzung der Overpass API mit R
+
+
+http://rpubs.com/Japhilko82/NutzungOverpassR
+
+
 <!--
 xxxxtodo: Point in Polygon Methode
 -->
