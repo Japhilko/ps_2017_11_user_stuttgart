@@ -6,10 +6,10 @@ output:
   slidy_presentation: default
   beamer_presentation: 
     colortheme: beaver
-    fonttheme: professionalfonts
+    fonttheme: structurebold
     highlight: tango
-    keep_tex: yes
-    theme: Szeged
+    theme: CambridgeUS
+    fig_caption: false
 ---
 
 ```{r, include=FALSE}
