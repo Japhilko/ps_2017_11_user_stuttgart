@@ -20,7 +20,7 @@ Im ersten Teil geht es die Verwendung von R in meinem Arbeitsalltag
 
 ## Die Erstellung von thematischen Karten
 
-Im zweiten Teil geht es dann um die räumliche Visualisierung ([Browser]() | [rcode]())
+Im zweiten Teil geht es dann um die räumliche Visualisierung ([Browser](https://github.com/Japhilko/ps_2017_11_user_stuttgart/blob/master/ps_user_stuttgart_part2.Rmd) | [rcode]())
 
 
 
