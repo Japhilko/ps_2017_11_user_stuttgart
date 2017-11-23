@@ -47,7 +47,8 @@ library(knitr)
 - Beratung zu Forschungsprojekten in allen Phasen
 - Forschungsbasierte wissenschaftliche Dienstleistungen
 
-## Datenerhebungsinfrastruktur für die Profession
+
+### Datenerhebungsinfrastruktur für die Profession
 
 - Probabilistisches mixed-mode Access Panel
 - Deutsche Allgemeinbevölkerung
@@ -60,9 +61,9 @@ library(knitr)
 ## Studien im Gesis Panel
 
 ```{r,echo=F}
-(load("data/GP_spat_studies.RData"))
+load("data/GP_spat_studies.RData")
 colnames(tab_spatial)[1] <- "Kürzel"
-kable(tab_spatial)
+kable(tab_spatial,row.names = F)
 ```
 
 ## Datenaufbereitung

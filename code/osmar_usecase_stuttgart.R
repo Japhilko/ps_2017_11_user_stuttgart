@@ -1,17 +1,23 @@
+# Osmar Daten für User group Stuttgart herunterladen
 # Jan-Philipp Kolb
 # Fri Nov 17 14:10:34 2017
 
-datapath <- "D:/Daten/GitHub/GeoData/presentations/ps_user_stuttgart/data/"
-graphpath <- "D:/Daten/GitHub/GeoData/presentations/ps_user_stuttgart/figure"
-
-
-
-# bounding box for Stuttgart
+################
+# Pakete einladen
 
 library(devtools)
 library(osmar) 
 library(ggmap)
 
+
+datapath <- "D:/Daten/GitHub/GeoData/presentations/ps_user_stuttgart/data/"
+graphpath <- "D:/Daten/GitHub/GeoData/presentations/ps_user_stuttgart/figure"
+
+datapath <- "~/GitHub/ps_2017_11_user_stuttgart/data"
+graphpath <- "~/GitHub/ps_2017_11_user_stuttgart/figure"
+
+
+# bounding box for Stuttgart
 
 src <- osmsource_api()
 
