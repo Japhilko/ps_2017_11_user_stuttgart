@@ -17,7 +17,7 @@ noint = !internet
 ## PLZ Datensatz einlesen
 
 
-# Das Paket `rgdal`
+# Den PLZ-Bereiche Datensatz einlesen 
 
 - Postleitzahlenbereiche - <http://arnulf.us/PLZ>
 
@@ -36,9 +36,16 @@ setwd("D:/GESIS/Workshops/GeoDaten/data/")
 PLZ <- readOGR ("post_pl.shp","post_pl")
 ```
 
-
-
 ```{r,eval=F}
 library(rgdal)
 PLZ <- readOGR ("post_pl.shp","post_pl")
 ```
+
+## OpenStreetMap Daten besorgen
+
+```{r}
+library("gosmd")
+
+```
+
+

@@ -18,7 +18,7 @@ par(mai=c(0,0,0,0))
 log_gesis=T
 log_home=!log_gesis
   
-internet=T
+internet=F
 noint = !internet
 ```
 
